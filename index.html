@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backed Supplements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Backed Supplements Logo" class="logo">
+            <h1>Power Your Performance with Science-Backed Nutrition</h1>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="introduction">
+        <h2>Welcome to Backed Supplements</h2>
+        <p>Discover the difference that science-backed nutrition can make in your performance and recovery.</p>
+    </section>
+
+    <section class="featured-products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card" id="ashwagandha">
+                <img src="images/ashwagandha.jpg" alt="Ashwagandha">
+                <h3>Ashwagandha</h3>
+                <p>Enhances energy and reduces stress.</p>
+                <button class="product-link" onclick="showPopup('ashwagandha')">Learn More</button>
+            </div>
+            <div class="product-card" id="tongkat-ali">
+                <img src="images/tongkat-ali.jpg" alt="Tongkat Ali">
+                <h3>Tongkat Ali</h3>
+                <p>Boosts testosterone and improves libido.</p>
+                <button class="product-link" onclick="showPopup('tongkat-ali')">Learn More</button>
+            </div>
+            <div class="product-card" id="fadogia-agrestis">
+                <img src="images/fadogia-agrestis.jpg" alt="Fadogia Agrestis">
+                <h3>Fadogia Agrestis</h3>
+                <p>Enhances athletic performance.</p>
+                <button class="product-link" onclick="showPopup('fadogia-agrestis')">Learn More</button>
+            </div>
+            <div class="product-card" id="turkesterone">
+                <img src="images/turkesterone.jpg" alt="Turkesterone">
+                <h3>Turkesterone</h3>
+                <p>Promotes muscle growth and recovery.</p>
+                <button class="product-link" onclick="showPopup('turkesterone')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-carousel">
+            <div class="review">
+                <img src="images/customer1.jpg" alt="Customer 1">
+                <p>"Backed Supplements have transformed my workouts! The energy boost from Ashwagandha is amazing." - John D.</p>
+            </div>
+            <div class="review">
+                <img src="images/customer2.jpg" alt="Customer 2">
+                <p>"I've seen a noticeable increase in my strength since I started taking Turkesterone. Highly recommend!" - Sarah L.</p>
+            </div>
+            <div class="review">
+                <img src="images/customer3.jpg" alt="Customer 3">
+                <p>"Tongkat Ali has really helped me with my stamina and performance. Great product!" - Mike W.</p>
+            </div>
+            <div class="review">
+                <img src="images/customer4.jpg" alt="Customer 4">
+                <p>"Fadogia Agrestis is a game-changer for my athletic performance. Fantastic results!" - Emily R.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="newsletter-signup">
+            <form action="#">
+                <label for="email">Sign up for our newsletter</label>
+                <input type="email" id="email" name="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
